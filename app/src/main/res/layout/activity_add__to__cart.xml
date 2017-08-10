@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e989f5"
+    android:orientation="vertical"
+    tools:context="administrator.example.com.drawshoopin.Add_To_Cart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#00d"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/back"
+            android:background="@mipmap/back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/show"
+                android:layout_marginLeft="260dp"
+                android:background="@drawable/addcard"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#8df5b2"
+        android:layout_weight="1">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:background="@drawable/imagefit"
+            android:id="@+id/pro_img"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/linearlayoutborder"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#101010"
+            android:text="ITEM NAME"
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="#00d"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="MARKET PRICE"
+                android:textSize="20dp"
+                android:textColor="#101010"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_weight=".9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/market_price"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#00d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textSize="20dp"
+                android:textColor="#101010"
+                android:text="WEB PRICE"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/web_price"
+            android:textSize="20dp"
+            android:textColor="#00d"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="AVAILABILITY"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="#101010"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/avai"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#00d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/cart"
+            android:layout_weight=".3"
+            android:textSize="20dp"
+            android:text="Add TO CART"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"/>
+        <Button
+            android:id="@+id/buyonline"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="BUY NOW"
+            android:background="#e77015"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

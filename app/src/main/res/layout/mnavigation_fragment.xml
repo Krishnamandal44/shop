@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="administrator.example.com.drawshoopin.mNavigationFragment">
+    <LinearLayout
+        android:id="@+id/lnmainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="14"
+        android:background="@drawable/backdra"
+        android:clickable="false"
+        android:nestedScrollingEnabled="false"
+        android:orientation="horizontal"
+        android:weightSum="20">
+        <!--ImageView Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:contextClickable="false"
+            android:gravity="center"
+            android:nestedScrollingEnabled="false"
+            android:paddingLeft="10dp">
+
+
+        </LinearLayout><!--TextSection Layout-->
+    </LinearLayout>
+        <!--ImageView Layout-->
+
+        <!--TextSection Layout-->
+
+
+
+    <!--LowerSection Layout Layout-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:background="#c24444"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#70dad715"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:id="@+id/lnfashion"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/fashion"
+                        android:layout_gravity="center"
+                        android:id="@+id/imgfashion"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+                    <TextView
+                        android:id="@+id/tvfashion"
+                        android:textColor="#8d169f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fashion"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="Product of Man,Women and Kids"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:id="@+id/lnmycart"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/addcard"
+                        android:layout_gravity="center"
+                        android:id="@+id/mycart"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lncart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+                    <TextView
+                        android:id="@+id/card"
+                        android:textColor="#8d169f"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Cart"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Show add card product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:id="@+id/lnmy"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/myacc"
+                        android:layout_gravity="center"
+                        android:id="@+id/help_icon"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+                    <TextView
+                        android:id="@+id/help_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Account"
+                        android:textColor="#8d169f"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Login your account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:id="@+id/lnlogout"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/logout_icon"
+                        android:layout_gravity="center"
+                        android:id="@+id/logout_icon"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+                    <TextView
+                        android:id="@+id/logout_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LogOut"
+                        android:textColor="#8d169f"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="Log out activated account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

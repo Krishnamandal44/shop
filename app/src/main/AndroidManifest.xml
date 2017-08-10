@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="administrator.example.com.drawshoopin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/eshop"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/eshop"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Maindrawer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Log_in" />
+        <activity android:name=".Sign_up" />
+        <activity android:name=".getsubcat" />
+        <activity android:name=".Getproduct" />
+        <activity android:name=".Add_To_Cart" />
+        <activity android:name=".List_View_Show" />
+        <activity android:name=".Buy_Now"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity android:name=".Delivery_Address" />
+        <activity android:name=".Show_delivery_address"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <activity android:name=".Edit_delivery_address"></activity>
+    </application>
+
+</manifest>

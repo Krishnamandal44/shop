@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f1f7"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    tools:context="administrator.example.com.drawshoopin.Maindrawer">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- The main content view -->
+        <ListView
+           android:id="@+id/lv"
+           android:layout_marginTop="60dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </ListView>
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lntop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#f9f4f4"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ln_menue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/menu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:background="#e7e7f7"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E_SHOP"
+                            android:textColor="#3d93a6"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="130dp"
+                            android:id="@+id/nam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout><!-- The navigation drawer -->
+        <fragment
+            android:id="@+id/fragmentitem"
+            android:name="administrator.example.com.drawshoopin.mNavigationFragment"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+             />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

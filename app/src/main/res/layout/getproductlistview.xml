@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#e178df"
+    tools:context=".Getproduct">
+    <LinearLayout
+        android:background="#00d"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/back"
+            android:background="@mipmap/back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/show"
+            android:layout_marginLeft="260dp"
+            android:background="@drawable/addcard"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_get_product"
+        android:background="@drawable/list_sector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
